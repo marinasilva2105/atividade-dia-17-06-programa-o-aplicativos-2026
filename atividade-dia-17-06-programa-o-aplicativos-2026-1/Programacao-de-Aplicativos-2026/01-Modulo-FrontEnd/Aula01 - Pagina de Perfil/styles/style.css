@@ -1,0 +1,81 @@
+:root{
+    --bg: #462C7D;
+    --surface: #831C91;
+    --card: #D552A3;
+    --primary: #FF70BF;
+    --text: #FF0066;
+    --muted: #E8D4B7;
+    --border: #6A0066;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1200px; /*para monitor grande, a largura máxima da página será de 1200px*/
+    margin: 0 auto;
+    width: 90%; /*ajusta a largura da página para 90% da tela*/
+}
+
+.header{
+    position: sticky;
+    top: 0;
+
+    background-color: rgba(15, 23, 42, 95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    z-index: 999;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+}
+
+.logo{
+
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+nav{
+    gap: 30px;
+    display: flex;
+
+}
+
+nav a{ /*seleciona a tag <a> que está contida dentro da tag <nav>*/
+    text-decoration: none;
+    color: var(--text);
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover{ /*adiciona um efeito de hover nos links do menu*/
+    color: var(--primary);
+
+}
+
+.hero{
+    min-height: 100vh;
+    display: flex;
+}
